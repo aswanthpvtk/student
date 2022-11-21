@@ -69,6 +69,30 @@ public class student {
                     break;
 
 
+                case 3:
+                    System.out.println("enter the adno code to be search");
+                    Scanner sca = new Scanner(System.in);
+                    int ecod = sca.nextInt();
+                    for (student e1 : arr) {
+                        if (ecod == e1.adno) {
+                            System.out.println("Details of employee with employee code " + ecod + "is ");
+                            System.out.println("name:" + e1.name);
+                            System.out.println("rollid:" + e1.rollno);
+                            System.out.println("admission:" + e1.adno);
+                            System.out.println("college:" + e1.cname);
+                        } else {
+                            System.out.println("No such student found");
+                        }
+                    }
+                    break;
+
+                case 4:
+
+
+
+
+
+
 
 
             }
