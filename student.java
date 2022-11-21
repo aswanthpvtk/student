@@ -7,7 +7,7 @@ public class student {
     int adno;
     int rollno;
     String cname;
-
+static student w;
     public student(String name, int adno, int rollno, String cname) {
         this.name = name;
         this.adno = adno;
@@ -87,6 +87,16 @@ public class student {
                     break;
 
                 case 4:
+                    System.out.println("Enter the employee code");
+                    Scanner obj2 = new Scanner(System.in);
+                    int ecode2 = obj2.nextInt();
+                    for (student i : arr) {
+                        if (ecode2 == i.adno) {
+                            w = i;
+                        }
+                    }
+                    arr.remove(w);
+                    break;
 
 
 
