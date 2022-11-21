@@ -33,6 +33,10 @@ static student w;
 
     public static void main(String[] args) {
         int op;
+        boolean fl=true;
+
+        while (fl)
+        {
         ArrayList<student> arr = new ArrayList<student>();
 
             System.out.println("Enter the option:");
@@ -42,8 +46,7 @@ static student w;
             Scanner sc = new Scanner(System.in);
             op = sc.nextInt();
 
-            switch(op)
-            {
+            switch (op) {
                 case 1:
                     System.out.println("Enter the student name");
                     String name = sc.next();
@@ -99,13 +102,13 @@ static student w;
                     break;
 
 
-
-
-
-
+                case 5:
+                    fl = false;
+                    break;
 
 
             }
-
+            break;
+        }
     }}
 }
