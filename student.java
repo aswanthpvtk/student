@@ -36,6 +36,7 @@ public class student {
         ArrayList<student> arr = new ArrayList<student>();
 
             System.out.println("Enter the option:");
+        while (true) {
             System.out.println("--------------------------------------------");
             System.out.println("1.Add\n2.View\n3.Search\n4.Delete\n5.Exit");
             Scanner sc = new Scanner(System.in);
@@ -56,8 +57,21 @@ public class student {
                     arr.add(e);
                     break;
 
+                case 2:
+                    System.out.println("The details are:");
+                    for (int i = 0; i < arr.size(); i++) {
+                        System.out.println("employee details");
+                        System.out.println("name:" + arr.get(i).name);
+                        System.out.println("Adno:" + arr.get(i).adno);
+                        System.out.println("rollno:" + arr.get(i).rollno);
+                        System.out.println("college:" + arr.get(i).cname);
+                    }
+                    break;
+
+
+
 
             }
 
-    }
+    }}
 }
